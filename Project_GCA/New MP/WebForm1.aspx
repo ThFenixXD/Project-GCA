@@ -9,7 +9,6 @@
             flex-direction: column;
             align-items: center;
             padding: 24px;
-            border: 1px solid red;
         }
 
         .container__cadastrar__fieldset {
@@ -22,15 +21,16 @@
             .container__cadastrar__fieldset legend {
                 margin-left: 20px;
                 text-align: center;
+                color: white;
                 font-size: 64px;
-                font-weight: 800;
+                font-weight: 600;
                 letter-spacing: 1.2px;
             }
 
         .container__cadastrar__opcoes {
             display: flex;
             padding: 0 250px;
-            color: grey;
+            color: white;
             text-decoration: none;
             transition: .10s;
         }
