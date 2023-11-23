@@ -68,14 +68,31 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\Reset.css" />
+    <Content Include="New MP\WebForm1.aspx" />
     <Content Include="Web.config" />
     <Content Include="Webforms\HomePage.aspx" />
+    <Content Include="Teste\Cadastrar.aspx" />
+    <Content Include="Teste\CadastroChaves.aspx" />
+    <Content Include="Teste\CadastroMaquinas.aspx" />
+    <Content Include="Teste\CadastroUsuario.aspx" />
     <Content Include="Webforms\PagCadastrar.aspx" />
-    <Content Include="Webforms\PagCadastroChaves.aspx" />
-    <Content Include="Webforms\PagCadastroMaquinas.aspx" />
-    <Content Include="Webforms\PagCadastroUsuario.aspx" />
+    <Content Include="Webforms\WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="New MP\New MP.Master.cs">
+      <DependentUpon>New MP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="New MP\New MP.Master.designer.cs">
+      <DependentUpon>New MP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="New MP\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="New MP\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Webforms\HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
@@ -91,6 +108,34 @@
     <Compile Include="Webforms\Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
+    <Compile Include="Teste\Cadastrar.aspx.cs">
+      <DependentUpon>Cadastrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teste\Cadastrar.aspx.designer.cs">
+      <DependentUpon>Cadastrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teste\CadastroChaves.aspx.cs">
+      <DependentUpon>CadastroChaves.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teste\CadastroChaves.aspx.designer.cs">
+      <DependentUpon>CadastroChaves.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teste\CadastroMaquinas.aspx.cs">
+      <DependentUpon>CadastroMaquinas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teste\CadastroMaquinas.aspx.designer.cs">
+      <DependentUpon>CadastroMaquinas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teste\CadastroUsuario.aspx.cs">
+      <DependentUpon>CadastroUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teste\CadastroUsuario.aspx.designer.cs">
+      <DependentUpon>CadastroUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Webforms\PagCadastrar.aspx.cs">
       <DependentUpon>PagCadastrar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -98,29 +143,16 @@
     <Compile Include="Webforms\PagCadastrar.aspx.designer.cs">
       <DependentUpon>PagCadastrar.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Webforms\PagCadastroChaves.aspx.cs">
-      <DependentUpon>PagCadastroChaves.aspx</DependentUpon>
+    <Compile Include="Webforms\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Webforms\PagCadastroChaves.aspx.designer.cs">
-      <DependentUpon>PagCadastroChaves.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Webforms\PagCadastroMaquinas.aspx.cs">
-      <DependentUpon>PagCadastroMaquinas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Webforms\PagCadastroMaquinas.aspx.designer.cs">
-      <DependentUpon>PagCadastroMaquinas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Webforms\PagCadastroUsuario.aspx.cs">
-      <DependentUpon>PagCadastroUsuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Webforms\PagCadastroUsuario.aspx.designer.cs">
-      <DependentUpon>PagCadastroUsuario.aspx</DependentUpon>
+    <Compile Include="Webforms\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="New MP\New MP.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

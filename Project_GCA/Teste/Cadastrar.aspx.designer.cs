@@ -11,7 +11,7 @@ namespace Project_GCA.Webforms
 {
 
 
-    public partial class PagCadastrar
+    public partial class PagCadastro
     {
     }
 }

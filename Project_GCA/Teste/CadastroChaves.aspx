@@ -1,27 +1,16 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Webforms/Master.Master" AutoEventWireup="true" CodeBehind="PagCadastroUsuario.aspx.cs" Inherits="Project_GCA.Webforms.PagCadastroUsuario" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Webforms/Master.Master" AutoEventWireup="true" CodeBehind="CadastroChaves.aspx.cs" Inherits="Project_GCA.Webforms.PagCadastroChaves" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
-        
-        html {
-            /*background-color: #4F78C4;*/
-            font-family: 'Roboto', sans-serif;
-        }
-
-        body {
-            display: flex;
+        .container {
             margin: 0;
             padding: 0;
         }
 
-        .container{
-            padding: 0;
-        }
-        
-        .container__cadastrousuarios {
+        .container__CadastroMaquina {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -32,7 +21,7 @@
             min-height: 600px;
         }
 
-        .container__cadastrousuarios__fieldset {
+        .container__CadastroMaquina__fieldset {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -43,7 +32,7 @@
             grid-gap: 25px;
         }
 
-            .container__cadastrousuarios__fieldset legend {
+            .container__CadastroMaquina__fieldset legend {
                 margin-left: 20px;
                 text-align: center;
                 font-size: 64px;
@@ -69,23 +58,36 @@
         }
     </style>
 
-    <div class="container__cadastrousuarios mx-auto">
-        <fieldset class="container__cadastrousuarios__fieldset">
-            <legend>Cadastro de Usuário</legend>
+    <div class="container__CadastroMaquina mx-auto">
+        <fieldset class="container__CadastroMaquina__fieldset">
+            <legend>Cadastro de Chave de Ativação</legend>
             <div class="dados_cadastro ">
                 <div class="Bloco_Dados row mx-auto align-items-center">
-                    <asp:Label CssClass="lb col-3 " runat="server" Text="Nome do Usuário"></asp:Label>
+                    <asp:Label CssClass="lb col-3 " runat="server" Text="Nome do Software"></asp:Label>
                     <asp:TextBox CssClass="txt col-9 " runat="server"></asp:TextBox>
                 </div>
                 <div class="Bloco_Dados row mx-auto align-items-center">
-                    <asp:Label CssClass="lb col-3 " runat="server" Text="Função"></asp:Label>
+                    <asp:Label CssClass="lb col-3 " runat="server" Text="Fabricante"></asp:Label>
                     <asp:TextBox CssClass="txt col-9 " runat="server"></asp:TextBox>
                 </div>
                 <div class="Bloco_Dados row mx-auto align-items-center">
+                    <asp:Label CssClass="lb col-3 " runat="server" Text="Tipo de Licença"></asp:Label>
+                    <asp:TextBox CssClass="txt col-9 " runat="server"></asp:TextBox>
+                </div>
+                <div class="Bloco_Dados row mx-auto align-items-center">
+                    <asp:Label CssClass="lb col-3 " runat="server" Text="Prazo da Licença"></asp:Label>
+                    <asp:TextBox CssClass="txt col-9 " runat="server"></asp:TextBox>
+                </div>
+                <div class="Bloco_Dados row mx-auto align-items-center">
+                    <asp:Label CssClass="lb col-3 " runat="server" Text="Chave de Ativação"></asp:Label>
+                    <asp:TextBox CssClass="txt col-9 " runat="server"></asp:TextBox>
+                </div>
+                <%--<div class="Bloco_Dados row mx-auto align-items-center">
                     <asp:Label CssClass="lb col-3 " runat="server" Text="Setor"></asp:Label>
-                    <asp:DropDownList CssClass="ddl col-9 " runat="server" DataTextField="" DataValueField=""></asp:DropDownList>
-                </div>
+                    <asp:DropDownList CssClass="txt col-9 " runat="server" DataTextField="" DataValueField=""></asp:DropDownList>
+                </div>--%>
             </div>
         </fieldset>
     </div>
+
 </asp:Content>

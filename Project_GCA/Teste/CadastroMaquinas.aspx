@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Webforms/Master.Master" AutoEventWireup="true" CodeBehind="PagCadastroMaquinas.aspx.cs" Inherits="Project_GCA.Webforms.PagCadastroMaquinas" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Webforms/Master.Master" AutoEventWireup="true" CodeBehind="CadastroMaquinas.aspx.cs" Inherits="Project_GCA.Webforms.PagCadastroMaquinas" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
