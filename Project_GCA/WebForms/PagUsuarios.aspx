@@ -3,10 +3,10 @@
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form runat="server">
+    <%--   <form runat="server">
         <telerik:RadScriptManager runat="server"></telerik:RadScriptManager>
 
-       <%-- <asp:Panel ID="PnlGridUsuarios" CssClass="PnlGrid" runat="server">
+        <asp:Panel ID="PnlGridUsuarios" CssClass="PnlGrid" runat="server">
             <telerik:RadGrid ID="GridUsuarios" runat="server" OnNeedDataSource="GridUsuarios_NeedDataSource" OnItemCommand="GridUsuarios_ItemCommand" AutoGenerateColumns="false">
                 <GroupingSettings CollapseAllTooltip="Collaps All Columns" />
                 <MasterTableView DataKeyNames="">
@@ -26,19 +26,25 @@
                     </Columns>
                 </MasterTableView>
             </telerik:RadGrid>
-        </asp:Panel>--%>
-
-        <asp:Panel CssClass="border row d-flex w-100 m-0 align-items-center" runat="server">
-            <div class="col-4"><i class="bi bi-person-circle"></i></div>
-            <div class="col-8">
-                <div class="col-12">
-                    <asp:TextBox runat="server"></asp:TextBox>
+        </asp:Panel>
+    </form>--%>
+    <form>
+        <div class="PnlUsuario row h-25 m-auto">
+            <div class="row w-50 d-flex mx-auto p-0">
+                <div class="col-4 bg-danger m-0 p-0">
                 </div>
-                <div class="col-12">
-                    <asp:TextBox runat="server"></asp:TextBox>
+                <div class="col-8 p-0 m-0">
+                    <div class="row h-100 p-0">
+                        <div class="col-12 bg-white p-0">
+                            <asp:TextBox runat="server"></asp:TextBox>
+                        </div>
+                        <div class="col-12 bg-warning p-0"></div>
+                    </div>
                 </div>
             </div>
-        </asp:Panel>
+        </div>
     </form>
+
+
 
 </asp:Content>

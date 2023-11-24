@@ -74,6 +74,7 @@
     <Content Include="CSS\CssGeral.css" />
     <Content Include="CSS\MasterPage.css" />
     <Content Include="CSS\PagCadastrar.css" />
+    <Content Include="Teste\WebForm1.aspx" />
     <Content Include="Webforms.Old\WebForm2.aspx" />
     <Content Include="WebForms\HomePage.aspx" />
     <Content Include="Teste\PagCadastrarOLD.aspx" />
@@ -92,6 +93,13 @@
     <Content Include="WebForms\PagUsuarios.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Teste\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teste\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Webforms.Old\WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -13,8 +13,9 @@
     text-align: left;
 }
 
-.PnlCadastrar, .PnlCadastro {
+.PnlCadastrar, .PnlCadastro, .PnlUsuario {
     width: 80%;
+    /*background-color: blue;*/
 }
 
 .cadastrar__opcoes {
