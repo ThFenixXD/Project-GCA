@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Project_GCA.New_MP
 {
-    public partial class PagCadastrar2 : System.Web.UI.Page
+    public partial class PagCadastroChaves : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

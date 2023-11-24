@@ -1,0 +1,48 @@
+﻿.container__cadastrar {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    padding: 24px;
+}
+
+.container__cadastrar__fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    grid-gap: 25px;
+}
+
+    .container__cadastrar__fieldset legend {
+        margin-left: 20px;
+        text-align: center;
+        color: white;
+        font-size: 64px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+    }
+
+.container__cadastrar__opcoes {
+    display: flex;
+    padding: 0 250px;
+    color: white;
+    text-decoration: none;
+    transition: .10s;
+}
+
+    .container__cadastrar__opcoes:hover {
+        background-color: white;
+        color: #4F78C4;
+    }
+
+    .container__cadastrar__opcoes .icon {
+        font-size: 64px;
+        margin-top: 6px;
+    }
+
+    .container__cadastrar__opcoes .txt-link {
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 16px;
+        margin-left: 32px;
+    }

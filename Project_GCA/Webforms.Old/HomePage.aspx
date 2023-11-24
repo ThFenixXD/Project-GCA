@@ -1,13 +1,19 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebForms/New MP.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="Project_GCA.New_MP.HomePage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Webforms/Master.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="Project_GCA.Webforms.HomePage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <style>
+
         .PnlBemVindo {
             display: flex;
             flex-direction: column;
-            width: 80%;
+            width: 100%;
             padding: 32px;
-            margin: auto;
-            color: white;
+            margin-bottom: 15vh;
             line-height: 1.8
         }
 
@@ -38,7 +44,7 @@
             width: 80%;
         }
     </style>
-    <asp:Panel CssClass="row PnlBemVindo" runat="server">
+    <asp:Panel CssClass="PnlBemVindo" runat="server">
         <div class="PnlBemVindo__title">
             <asp:Label class="PnlBemVindo__title title" runat="server" Text="GCA"></asp:Label>
             <asp:Label class="PnlBemVindo__title subtitle" runat="server" Text="Gerenciador de Chaves de Ativação"></asp:Label>
@@ -48,4 +54,5 @@
             consulta e cadastros...
         </p>
     </asp:Panel>
+
 </asp:Content>

@@ -11,7 +11,7 @@ namespace Project_GCA.New_MP
 {
 
 
-    public partial class PagCadastrar2
+    public partial class PagCadastroChaves
     {
     }
 }

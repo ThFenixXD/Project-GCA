@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project_GCA.Webforms
+namespace Project_GCA.New_MP
 {
 
 

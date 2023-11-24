@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Project_GCA.Webforms
+namespace Project_GCA.New_MP
 {
     public partial class HomePage : System.Web.UI.Page
     {

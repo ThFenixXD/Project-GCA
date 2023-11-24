@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project_GCA.New_MP
+namespace Project_GCA.Webforms
 {
 
 
-    public partial class PagCadastrar2
+    public partial class PagCadastrar
     {
     }
 }
