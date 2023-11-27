@@ -12,15 +12,10 @@ namespace Project_GCA
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_Usuario
+    public partial class tb_Licença
     {
-        public int ID_Usuario { get; set; }
-        public string Nome { get; set; }
-        public string Funcao { get; set; }
-        public Nullable<int> Status { get; set; }
+        public int ID_TipoLicenca { get; set; }
+        public string TipoLicenca { get; set; }
         public Nullable<int> Deleted { get; set; }
-        public Nullable<int> ID_Setor { get; set; }
-        public Nullable<int> ID_Maquina { get; set; }
-        public Nullable<int> ID_Chave { get; set; }
     }
 }

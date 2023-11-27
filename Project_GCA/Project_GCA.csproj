@@ -131,6 +131,9 @@
     <Compile Include="tb_Chave.cs">
       <DependentUpon>ProjectGCAModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="tb_Licença.cs">
+      <DependentUpon>ProjectGCAModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="tb_Maquina.cs">
       <DependentUpon>ProjectGCAModel.tt</DependentUpon>
     </Compile>

@@ -20,10 +20,11 @@ namespace Project_GCA
         public string TipoLicença { get; set; }
         public string PrazoLicença { get; set; }
         public string ChaveAtivação { get; set; }
+        public Nullable<int> Status { get; set; }
+        public Nullable<int> Deleted { get; set; }
         public Nullable<int> ID_Usuario { get; set; }
         public Nullable<int> ID_Maquina { get; set; }
         public Nullable<int> ID_Setor { get; set; }
-        public Nullable<int> Status { get; set; }
-        public Nullable<int> Deleted { get; set; }
+        public Nullable<int> ID_Licenca { get; set; }
     }
 }

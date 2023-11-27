@@ -16,6 +16,7 @@ namespace Project_GCA.New_MP
         {
             DdlSetor.DataSource = Framework.GetDataTable("Select ID_Setor, Setor from tb_Setor where Deleted = 0");
             DdlSetor.DataBind();
+            DdlSetor.Items.Insert(0, new ListItem("Selecione"));
         }
 
 

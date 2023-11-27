@@ -26,6 +26,7 @@ namespace Project_GCA
         }
     
         public virtual DbSet<tb_Chave> tb_Chave { get; set; }
+        public virtual DbSet<tb_Licença> tb_Licença { get; set; }
         public virtual DbSet<tb_Maquina> tb_Maquina { get; set; }
         public virtual DbSet<tb_Setor> tb_Setor { get; set; }
         public virtual DbSet<tb_Usuario> tb_Usuario { get; set; }
