@@ -99,6 +99,7 @@
     <Content Include="Teste\PagCadastrarOLD.aspx" />
     <Content Include="WebForms\PagCadastrar.aspx" />
     <Content Include="WebForms\PagCadastroChaves.aspx" />
+    <Content Include="WebForms\PagCadastroLicençaUsuario.aspx" />
     <Content Include="WebForms\PagCadastroMaquinas.aspx" />
     <Content Include="WebForms\PagCadastroUsuario.aspx" />
     <Content Include="Web.config" />
@@ -198,6 +199,13 @@
     </Compile>
     <Compile Include="WebForms\PagCadastroChaves.aspx.designer.cs">
       <DependentUpon>PagCadastroChaves.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\PagCadastroLicençaUsuario.aspx.cs">
+      <DependentUpon>PagCadastroLicençaUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\PagCadastroLicençaUsuario.aspx.designer.cs">
+      <DependentUpon>PagCadastroLicençaUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForms\PagCadastroMaquinas.aspx.cs">
       <DependentUpon>PagCadastroMaquinas.aspx</DependentUpon>

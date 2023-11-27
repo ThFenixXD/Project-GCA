@@ -16,6 +16,7 @@ namespace Project_GCA.New_MP
         {
             DdlTipoLicenca.DataSource = Framework.GetDataTable("Select ID_TipoLicenca, TipoLicenca from tb_Licença where Deleted = 0");
             DdlTipoLicenca.DataBind();
+            DdlTipoLicenca.Items.Insert(0, new ListItem("Selecione"));
         }
 
 
