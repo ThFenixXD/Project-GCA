@@ -7,19 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Project_GCA.WebForms
 {
-    public partial class PagUsuarios : System.Web.UI.Page
+    public partial class PagChaves : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
-        /*GRID USUARIOS*/
-
-
-
-        /*GRID USUARIO*/
-
-
     }
 }

@@ -32,7 +32,7 @@
                 </a>
             </li>
             <li class="item-menu keys">
-                <a class="last__menu-item" href="#">
+                <a class="last__menu-item" href="PagChaves.aspx">
                     <span class="icon"><i class="bi bi-key"></i></span>
                     <span class="txt-link">Chaves</span>
                 </a>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Project_GCAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tb_Chave">
+          <Key>
+            <PropertyRef Name="ID_Chave" />
+          </Key>
+          <Property Name="ID_Chave" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Software" Type="nvarchar" MaxLength="50" />
+          <Property Name="Fabricante" Type="nvarchar" MaxLength="50" />
+          <Property Name="TipoLicença" Type="nvarchar" MaxLength="50" />
+          <Property Name="PrazoLicença" Type="nvarchar" MaxLength="50" />
+          <Property Name="ChaveAtivação" Type="nvarchar" MaxLength="50" />
+          <Property Name="Status" Type="int" />
+          <Property Name="Deleted" Type="int" />
+          <Property Name="ID_Usuario" Type="int" />
+          <Property Name="ID_Maquina" Type="int" />
+          <Property Name="ID_Setor" Type="int" />
+        </EntityType>
+        <EntityType Name="tb_Maquina">
+          <Key>
+            <PropertyRef Name="ID_Maquina" />
+          </Key>
+          <Property Name="ID_Maquina" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Maquina" Type="nvarchar" MaxLength="50" />
+          <Property Name="Status" Type="int" />
+          <Property Name="Deleted" Type="int" />
+          <Property Name="ID_Setor" Type="int" />
+          <Property Name="ID_Chave" Type="int" />
+          <Property Name="ID_Usuario" Type="int" />
+        </EntityType>
+        <EntityType Name="tb_Setor">
+          <Key>
+            <PropertyRef Name="ID_Setor" />
+          </Key>
+          <Property Name="ID_Setor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Setor" Type="nvarchar" MaxLength="50" />
+          <Property Name="Status" Type="int" />
+          <Property Name="Deleted" Type="int" />
+        </EntityType>
+        <EntityType Name="tb_Usuario">
+          <Key>
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_Usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nome" Type="nvarchar" MaxLength="50" />
+          <Property Name="Funcao" Type="nvarchar" MaxLength="50" />
+          <Property Name="Status" Type="int" />
+          <Property Name="Deleted" Type="int" />
+          <Property Name="ID_Setor" Type="int" />
+          <Property Name="ID_Maquina" Type="int" />
+          <Property Name="ID_Chave" Type="int" />
+        </EntityType>
+        <EntityContainer Name="Project_GCAModelStoreContainer">
+          <EntitySet Name="tb_Chave" EntityType="Self.tb_Chave" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Maquina" EntityType="Self.tb_Maquina" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Setor" EntityType="Self.tb_Setor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Usuario" EntityType="Self.tb_Usuario" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Project_GCAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tb_Chave">
+          <Key>
+            <PropertyRef Name="ID_Chave" />
+          </Key>
+          <Property Name="ID_Chave" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Software" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Fabricante" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TipoLicença" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PrazoLicença" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ChaveAtivação" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ID_Usuario" Type="Int32" />
+          <Property Name="ID_Maquina" Type="Int32" />
+          <Property Name="ID_Setor" Type="Int32" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="Deleted" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tb_Maquina">
+          <Key>
+            <PropertyRef Name="ID_Maquina" />
+          </Key>
+          <Property Name="ID_Maquina" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Maquina" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ID_Setor" Type="Int32" />
+          <Property Name="ID_Chave" Type="Int32" />
+          <Property Name="ID_Usuario" Type="Int32" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="Deleted" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tb_Setor">
+          <Key>
+            <PropertyRef Name="ID_Setor" />
+          </Key>
+          <Property Name="ID_Setor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Setor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="Deleted" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tb_Usuario">
+          <Key>
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_Usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Funcao" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ID_Setor" Type="Int32" />
+          <Property Name="ID_Maquina" Type="Int32" />
+          <Property Name="ID_Chave" Type="Int32" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="Deleted" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="GCAEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tb_Chave" EntityType="Self.tb_Chave" />
+          <EntitySet Name="tb_Maquina" EntityType="Self.tb_Maquina" />
+          <EntitySet Name="tb_Setor" EntityType="Self.tb_Setor" />
+          <EntitySet Name="tb_Usuario" EntityType="Self.tb_Usuario" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Project_GCAModelStoreContainer" CdmEntityContainer="GCAEntities">
+          <EntitySetMapping Name="tb_Chave">
+            <EntityTypeMapping TypeName="Project_GCAModel.tb_Chave">
+              <MappingFragment StoreEntitySet="tb_Chave">
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ID_Chave" ColumnName="ID_Chave" />
+                <ScalarProperty Name="Software" ColumnName="Software" />
+                <ScalarProperty Name="Fabricante" ColumnName="Fabricante" />
+                <ScalarProperty Name="TipoLicença" ColumnName="TipoLicença" />
+                <ScalarProperty Name="PrazoLicença" ColumnName="PrazoLicença" />
+                <ScalarProperty Name="ChaveAtivação" ColumnName="ChaveAtivação" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="ID_Maquina" ColumnName="ID_Maquina" />
+                <ScalarProperty Name="ID_Setor" ColumnName="ID_Setor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Maquina">
+            <EntityTypeMapping TypeName="Project_GCAModel.tb_Maquina">
+              <MappingFragment StoreEntitySet="tb_Maquina">
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ID_Maquina" ColumnName="ID_Maquina" />
+                <ScalarProperty Name="Maquina" ColumnName="Maquina" />
+                <ScalarProperty Name="ID_Setor" ColumnName="ID_Setor" />
+                <ScalarProperty Name="ID_Chave" ColumnName="ID_Chave" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Setor">
+            <EntityTypeMapping TypeName="Project_GCAModel.tb_Setor">
+              <MappingFragment StoreEntitySet="tb_Setor">
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ID_Setor" ColumnName="ID_Setor" />
+                <ScalarProperty Name="Setor" ColumnName="Setor" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Usuario">
+            <EntityTypeMapping TypeName="Project_GCAModel.tb_Usuario">
+              <MappingFragment StoreEntitySet="tb_Usuario">
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Funcao" ColumnName="Funcao" />
+                <ScalarProperty Name="ID_Setor" ColumnName="ID_Setor" />
+                <ScalarProperty Name="ID_Maquina" ColumnName="ID_Maquina" />
+                <ScalarProperty Name="ID_Chave" ColumnName="ID_Chave" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -43,7 +43,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -74,7 +82,18 @@
     <Content Include="CSS\CssGeral.css" />
     <Content Include="CSS\MasterPage.css" />
     <Content Include="CSS\PagCadastrar.css" />
+    <Content Include="ProjectGCAModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProjectGCAModel.edmx</DependentUpon>
+      <LastGenOutput>ProjectGCAModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectGCAModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProjectGCAModel.edmx</DependentUpon>
+      <LastGenOutput>ProjectGCAModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Teste\WebForm1.aspx" />
+    <Content Include="Teste\WebForm2.aspx" />
     <Content Include="Webforms.Old\WebForm2.aspx" />
     <Content Include="WebForms\HomePage.aspx" />
     <Content Include="Teste\PagCadastrarOLD.aspx" />
@@ -90,15 +109,50 @@
     <Content Include="Teste\CadastroUsuario.aspx" />
     <Content Include="Webforms.Old\PagCadastrar.aspx" />
     <Content Include="Webforms.Old\WebForm1.aspx" />
+    <Content Include="WebForms\PagChaves.aspx" />
     <Content Include="WebForms\PagUsuarios.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProjectGCAModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectGCAModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectGCAModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectGCAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectGCAModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectGCAModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Chave.cs">
+      <DependentUpon>ProjectGCAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Maquina.cs">
+      <DependentUpon>ProjectGCAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Setor.cs">
+      <DependentUpon>ProjectGCAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Usuario.cs">
+      <DependentUpon>ProjectGCAModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Teste\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Teste\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teste\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teste\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Webforms.Old\WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
@@ -213,6 +267,13 @@
     <Compile Include="Webforms.Old\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebForms\PagChaves.aspx.cs">
+      <DependentUpon>PagChaves.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\PagChaves.aspx.designer.cs">
+      <DependentUpon>PagChaves.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForms\PagUsuarios.aspx.cs">
       <DependentUpon>PagUsuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -220,10 +281,18 @@
     <Compile Include="WebForms\PagUsuarios.aspx.designer.cs">
       <DependentUpon>PagUsuarios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Útil\Framework.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="WebForms\New MP.Master" />
     <None Include="packages.config" />
+    <EntityDeploy Include="ProjectGCAModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProjectGCAModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ProjectGCAModel.edmx.diagram">
+      <DependentUpon>ProjectGCAModel.edmx</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -235,10 +304,12 @@
   <ItemGroup>
     <Folder Include="Imagens\" />
     <Folder Include="Js\" />
-    <Folder Include="Útil\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

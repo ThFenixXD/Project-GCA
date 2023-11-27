@@ -7,27 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project_GCA.WebForms {
+namespace Project_GCA.Teste {
     
     
-    public partial class PagUsuarios {
+    public partial class WebForm2 {
         
         /// <summary>
-        /// pnlGridUsuarios control.
+        /// DdlSoftwareUsuario control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlGridUsuarios;
-        
-        /// <summary>
-        /// GridUsuarios control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadGrid GridUsuarios;
+        protected global::System.Web.UI.WebControls.DropDownList DdlSoftwareUsuario;
     }
 }

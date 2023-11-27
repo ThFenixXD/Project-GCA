@@ -9,12 +9,17 @@
             <form runat="server" class="w-75 d-flex flex-column mx-auto justify-content-center gap-3">
                 <div class="d-flex col-12 col-md-12 justify-content-between">
                     <asp:Label CssClass="col-3 LbCadastroUsuario" runat="server" Text="Máquina"></asp:Label>
-                    <asp:TextBox CssClass="col-9" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtNomeMaquina" CssClass="col-9" runat="server"></asp:TextBox>
                 </div>
                 <div class="d-flex col-12 col-md-12 justify-content-between">
                     <asp:Label CssClass="col-3 LbCadastroUsuario" runat="server" Text="Setor"></asp:Label>
-                    <asp:TextBox CssClass="col-9" runat="server"></asp:TextBox>
+                    <asp:DropDownList ID="DdlSetor" CssClass="col-9 text-center" runat="server" DataTextField="Setor" DataValueField="ID_Setor"></asp:DropDownList>
                 </div>
+                <div class="d-flex col-12 col-md-12 justify-content-end gap-3">
+                    <asp:Button ID="Btn_Salvar" CssClass="btn" runat="server" Text="Salvar" OnClick="Btn_Salvar_Click"   />
+                    <asp:Button ID="Btn_Cancelar" CssClass="btn" runat="server" Text="Cancelar" PostBackUrl="~/WebForms/PagCadastrar.aspx"/>
+                </div>
+                <asp:HiddenField ID="HdfID" runat="server" />
             </form>
         </div>
     </div>

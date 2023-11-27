@@ -1,21 +1,16 @@
-﻿.LbCadastroUsuario, .TituloCadastro {
+﻿.LbCadastroUsuario, .TituloCadastro, .LbPnlUsuario {
     color: white;
 }
 
-.TituloCadastro{
+.TituloCadastro {
     font-size: 32px;
     font-weight: 600;
 }
 
-.LbCadastroUsuario{
+.LbCadastroUsuario {
     font-size: 20px;
     font-weight: 500;
     text-align: left;
-}
-
-.PnlCadastrar, .PnlCadastro, .PnlUsuario {
-    width: 80%;
-    /*background-color: blue;*/
 }
 
 .cadastrar__opcoes {
@@ -29,7 +24,7 @@
         color: #4F78C4;
     }
 
-.TituloCadastrar{
+.TituloCadastrar {
     font-size: 64px;
     font-weight: 700;
 }

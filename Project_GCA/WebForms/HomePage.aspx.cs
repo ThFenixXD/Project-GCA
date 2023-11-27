@@ -5,21 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Project_GCA.WebForms
+namespace Project_GCA.New_MP
 {
-    public partial class PagUsuarios : System.Web.UI.Page
+    public partial class HomePage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
-        /*GRID USUARIOS*/
-
-
-
-        /*GRID USUARIO*/
-
-
     }
 }

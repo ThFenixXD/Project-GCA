@@ -7,54 +7,54 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project_GCA.New_MP {
+namespace Project_GCA.WebForms {
     
     
-    public partial class PagCadastroMaquinas {
+    public partial class PagChaves {
         
         /// <summary>
-        /// txtNomeMaquina control.
+        /// RadScriptManager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNomeMaquina;
+        protected global::Telerik.Web.UI.RadScriptManager RadScriptManager1;
         
         /// <summary>
-        /// DdlSetor control.
+        /// pnlGridChavesInativas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DdlSetor;
+        protected global::System.Web.UI.WebControls.Panel pnlGridChavesInativas;
         
         /// <summary>
-        /// Btn_Salvar control.
+        /// GridChavesInativas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_Salvar;
+        protected global::Telerik.Web.UI.RadGrid GridChavesInativas;
         
         /// <summary>
-        /// Btn_Cancelar control.
+        /// PnlGridChavesAtivas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_Cancelar;
+        protected global::System.Web.UI.WebControls.Panel PnlGridChavesAtivas;
         
         /// <summary>
-        /// HdfID control.
+        /// GridChavesAtivas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HdfID;
+        protected global::Telerik.Web.UI.RadGrid GridChavesAtivas;
     }
 }
